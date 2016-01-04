@@ -45,7 +45,7 @@
         </header>
         <div class="drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50" style="position:fixed;"> 
             <header class="drawer-header">
-                <img src="../assets/images/user.jpg" class="avatar" id="navbar-image">
+                <img src="../assets/images/user.jpg" class="avatar">
                 <div class="avatar-dropdown">
                     <span>Welcome Prastut</span>
                     <div class="mdl-layout-spacer"></div>
@@ -132,7 +132,7 @@
                                   </div>
                               </div>
                               <div class="col-md-3">
-                                <button type="submit" class="btn btn-primary btn-block avatar-save" id="crop-submit">Done</button>
+                                <button type="submit" class="btn btn-primary btn-block avatar-save">Done</button>
                             </div>
                         </div>
                     </div>
@@ -238,15 +238,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/cropper.min.js"></script>
     <script src="js/main.js"></script>
-    <script type="text/javascript">
-    $('#crop-submit').click(function(){
-    	var a = $('#usrimg').attr('src');
-    	alert(a);
-    	$('#navbar-image').attr('src',a);
-    	alert($('#navbar-image').attr('src'))
-    });
-    	
-    </script>
 </body>
 
 </html>
