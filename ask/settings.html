@@ -45,7 +45,7 @@
         </header>
         <div class="drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50" style="position:fixed;"> 
             <header class="drawer-header">
-                <img src="../assets/images/user.jpg" class="avatar">
+                <img src="../assets/images/user.jpg" class="avatar" id="navbar-image">
                 <div class="avatar-dropdown">
                     <span>Welcome Prastut</span>
                     <div class="mdl-layout-spacer"></div>
@@ -132,7 +132,7 @@
                                   </div>
                               </div>
                               <div class="col-md-3">
-                                <button type="submit" class="btn btn-primary btn-block avatar-save">Done</button>
+                                <button type="submit" class="btn btn-primary btn-block avatar-save" id="crop-submit">Done</button>
                             </div>
                         </div>
                     </div>
@@ -182,7 +182,7 @@
                     </form>
                 </div>
                 <div class="mdl-card__actions  submit_question">
-                    <a href="#" class="mdl-js-ripple-effect"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="font-size:16px; width:150px; text-transform:none;">Save Changes</button></a>
+                    <a href="#" class="mdl-js-ripple-effect"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="font-size:16px; width:150px; text-transform:none;" id="save-changes">Save Changes</button></a>
                 </div>
             </div>
         </div>
@@ -238,6 +238,13 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/cropper.min.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+    $('#save-changes').click(function(){
+        var a = $('#usrimg').attr('src');
+        $('#navbar-image').attr('src',a);
+    });
+        
+    </script>
 </body>
 
 </html>
